@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins","Sans-serif";
+}
+body{
+    background: #0096FF;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 700px;
+    height: 400px;
+    position: relative;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    background:#fff;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgb(158, 158, 158);
+}
+
+.input-name .name{
+    width:200px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 10px ;
+}
+.input-name3 textarea{
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 10px ;
+    margin-left: 23px;
+
+}
+.input-name3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 10px;
+    
+}
+.input-name3 .class{
+    margin-right: 10px;
+
+}
+.container h1{
+    text-align: center;
+}
+.input-nameP {
+    display: flex;
+    justify-content: space-around;
+}
+.input-nameP .id{
+    width:200px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 10px ;
+}
+.input-btn{
+    display: flex;
+    justify-content: space-around;
+}
+.input-btn button{
+    width:200px;
+    height: 35px;
+    text-align: center;
+    background: #CF9FFF;
+    border: none;
+    outline: none;
+    margin-top: 10px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input-btn button:hover{
+    width: 220px;
+}

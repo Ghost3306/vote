@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Vote Your Candidate </h1>
+        <form method="post">
+            {%csrf_token%}
+            <div>
+            <input type="radio" name="Canditate" id="Canditate" value="{{var}}">
+            <label>{{var}} <i class='bx bx-child'></i></label><br/>
+            <input type="radio" name="Canditate" id="Canditate" value="{{var}}">
+            <label>Siddhi Adulkar <i class='bx bx-qr-scan'></i></label><br/>
+            <input type="radio" name="Canditate" id="Canditate" value="{{var}}">
+            <label>Lalit Rawool</label><br/>
+            <input type="radio" name="Canditate" id="Canditate" value="{{var}}">
+            <label>Cheyenne Coutinho</label><br/>
+            <input type="radio" name="Canditate" id="Canditate" value="{{var}}">
+            <label>Rufus Ajgaonkar</label><br/>
+        </div>
+        <button type="submit">Vote</button>
+        </form>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel = "stylesheet" href ="{% static 'style.css' %}"/>
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <form method="post">
+            {%csrf_token%}
+            <h1>Registration Form</h1>
+            <div class="input-name">              
+                <input type="text" class="name" name="fname" id="fname" placeholder="First Name" required>               
+                <input type="text" class="name" name="mname" id="mname" placeholder="Middle Name" required>
+                <input type="text" class="name" name="lname" id="lname" placeholder="Last Name" required>
+            </div>
+            <div class="input-name">              
+                <input type="email" class="name" name="email" id="email" class="input-info" placeholder="abc@gmail.com" required>           
+                <input type="text" class="name" name="phone" id="phone" class="input-info" placeholder="phone" required>
+                <input type="date" class="name" name="dob" id="dob" class="input-info">
+            </div>
+           
+            <div class="input-name3">              
+                <label class="form-text">Gender :</label>
+                <label class="form-text">Male</label>
+                <input type="radio" name="gender" id="gender" value="male">
+                <label class="form-text">Female</label>
+                <input type="radio" name="gender" id="gender" value="female">
+                <textarea name="address" id="" cols="30" rows="5" placeholder="address" required></textarea>
+            </div>
+            <div class="input-nameP">              
+               <input type="password" class="id" name="crpass" id="" placeholder="Create Password">
+               <input type="password" class="id" name="cnpass" id="" placeholder="Confirm Password">
+            </div>
+            <div class="input-btn">      
+                <button type="submit">Register</button>      
+                <button type="reset">Cancel</button>  
+                
+             </div>
+        </form>
+    </div>
+   
+</body>
+</html>

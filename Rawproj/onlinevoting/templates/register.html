@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style2.css' %}">
+<body style="background-image: url('{% static 'image/bg.jpg' %}'); background-repeat: no repeat;background-size:100%;">
+    <div class="container">
+        <form method="post">
+            {%csrf_token%}
+            <h1>Registration Form</h1> 
+            <div class="input-name">
+                <label class="form-text">Firstname :</label>
+                <input type="text" name="fname" id="fname"><br/>
+                <label class="form-text">Middlename :</label>
+                <input type="text" name="mname" id="mname"><br/>
+                <label class="form-text">Lastname :</label>
+                <input type="text" name="lname" id="lname"><br/>
+            </div><br/>
+
+            <div class="input-name">
+                <label class="form-text">Email :</label>
+                <input type="text" name="email" id="email" class="input-info" ><br/>
+                <label class="form-text">Phone :</label>
+                <input type="text" name="phone" id="phone" class="input-info"><br/>
+                <label class="form-text">DOB :</label>
+                <input type="text" name="dob" id="dob" class="input-info"><br/>
+            </div><br/>
+
+            <div class="input-name">
+                <label class="form-text">Gender :</label><br/>
+                <label class="form-text">Male</label>
+                <input type="radio" name="male" id="gender"><br/>
+                <label class="form-text">Female</label>
+                <input type="radio" name="female" id="gender"><br/>
+            </div><br/>
+
+            <div class="input-name">
+                <label class="form-text">Address :</label>
+                <input type="text" name="Address" id="address" class="input-info"><br/>
+            </div><br/>
+
+            <div class="input-name">
+                <label class="form-text">Create password:</label>
+                <input type="text" name="crpass" id="create_pass" class="input-info"><br/>
+                <label class="form-text">Confirm password :</label>
+                <input type="text" name="cnpass" id="confirm_pass" class="input-info" ><br/>
+            </div><br/>
+            <button type="submit"id="register" class="btn">Register</button>
+            <button type="reset" id="cancel" class="btn">Cancel</button>
+        </form>
+    </div>
+   
+</body>
+</html>
