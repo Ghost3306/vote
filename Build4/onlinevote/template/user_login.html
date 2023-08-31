@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+</head>
+<body>
+    {% if msgtype == "error" %}
+        <script>
+            alert("{{message}}");
+        </script>
+    {% endif %}   
+    <div class="container">
+        <form method="post">
+            {%csrf_token%}
+            <input type="text" name="user" id="" placeholder="Username">
+            <input type="password" name="passw" id="" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+        
+    </div>
+
+
+    <a href="adminlogin">Admin Login</a>
+    <a href="/">Home</a>
+</body>
+</html>
