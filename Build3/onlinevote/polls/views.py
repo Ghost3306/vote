@@ -29,6 +29,8 @@ def register(request):
         crpass = request.POST.get('crpass')
         cnpass = request.POST.get('cnpass')
 
+        email_u=request.POST.get('email')
+
         name = request.POST.get('fname')+' '+request.POST.get('mname')+' '+request.POST.get('lname')
         address_user = request.POST.get('address')
         phone = request.POST.get('phone')
@@ -37,7 +39,7 @@ def register(request):
         #have to calculate age before processing
         if crpass ==cnpass:
             if typeuser=='admin':
-                if reg_admin(name,address_user,phone,'20',org,crpass):
+                if reg_admin(name,address_user,phone,email_u,'20',org,crpass):
                     return HttpResponseRedirect('adminlogin')
                 else:
                     return render(request,'register.html',{'msgtype':'error','message':'Unexpected Error Occur'})

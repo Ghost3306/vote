@@ -17,7 +17,7 @@ def select_all(tab_nm):
 
     
 
-def reg_admin(name,address,phone,age,org,password):
+def reg_admin(name,address,phone,email,age,org,password):
     s = "select * from admins where phone = '"+phone+"'"
     db.execute(s)
     res = db.fetchall()
@@ -25,8 +25,8 @@ def reg_admin(name,address,phone,age,org,password):
         return False
     
     uniqueid = random.randint(11111,99999)         
-    sql="insert into admins(name,address,phone,age,organization,uniqueid,password) values(%s,%s,%s,%s,%s,%s,%s)"
-    val=(name,address,phone,age,org,uniqueid,password)
+    sql="insert into admins(name,address,phone,email,age,organization,uniqueid,password) values(%s,%s,%s,%s,%s,%s,%s,%s)"
+    val=(name,address,phone,email,age,org,uniqueid,password)
     db.execute(sql,val)
     mydb.commit()
     return True
@@ -79,4 +79,3 @@ def verify(user,password):
         
     return False
 
-print(reg_admin('lalit rawool','halwal','48474787883','20','college','root'))
