@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Election</title>
+</head>
+<body>
+    {% if msgtype == "error" %}
+        <script>
+            alert("{{message}}");
+        </script>
+    {% endif %}   
+    <div class="container">
+        <div class="tables" border="1">
+            <table>
+                <tr>
+                    <th>Your elections</th>
+                </tr>
+                {% for row in table%}
+                    <tr>
+                        <td>{{row}}</td>
+                    </tr>
+                {% endfor%}
+            </table>
+        </div>
+        <div class="create-table">
+            <form  method="post">
+                {%csrf_token%}
+                {% if gateway == "tab_cr" %}
+                <label for="input">Create Election : </label>
+                <input type="text" name="elec_tab" id="elec_tab">
+                <button type="submit">Create</button>
+            {% endif %}   
+            {% if gateway == "comp_tab" %}
+                <h3>{{table}}</h3>
+                <label for="input">Add Candicate : </label>
+                <input type="text" name="can_nm" id="">
+                <button type="submit">Create</button>
+
+                <table border="1">
+                    <tr>
+                        <td>Candidate Name</td>
+                    </tr>
+                    {% for can in candidate%}
+                            <tr>
+                                <td>{{can}}</td>
+                            </tr>
+                    {% endfor%}
+                </table>
+            {% endif %} 
+            </form>
+        </div>
+    </div>
+</body>
+</html>
