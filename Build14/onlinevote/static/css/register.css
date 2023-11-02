@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Onest;
+}
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+.container {
+    border: 1px solid black;
+    width:670px;
+    height:500px;
+    margin-top: 68px;
+    
+  
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=date]:focus, textarea :focus{
+  background-color: #ddd;
+  outline: none;
+  
+}
+
+.div1 {
+    display:flex;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.div1 input[type=text]{
+    width: 180px;
+    height: 45px;
+    margin-left: 25px;
+}
+.div2 {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.div2 input[type=text],textarea {
+    width: 180px;
+    height: 45px;
+    margin-left: 25px;
+}
+.div2 textarea {
+    width: 280px;
+    height: 100px;
+    margin-left: 25px;
+}
+
+.div2 textarea::placeholder{
+    padding: 10px;
+}
+.div3 {
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.div3 input[type=text] ,input[type=date]{
+    width: 180px;
+    height: 35px; 
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.div3 label{
+    
+    margin-top: 25px;
+    height: 35px; 
+    justify-content: center;
+    margin-left: 25px;
+}
+.div4 {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.div4 label{
+    
+    margin-left: 25px;
+}
+.div4 input[type=radio]{
+    width: 18px;
+    height: 18px;
+   
+}
+.div5 {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.div5 input[type=password]{
+    width: 180px;
+    height: 45px;
+    margin-left: 25px;
+}
+.div6 {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    
+    width:auto;
+}
+.div6 button{
+    width: 180px;
+    height: 45px;
+    margin-left: 25px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background-color: rgb(0, 247, 255);
+    color: #fff;
+    transition: 0.1s;
+}
+.div6 button:hover{
+    width: 190px;
+}
+.div7 {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.button {
+  background-color: #aa04a2;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.button:hover {
+  opacity:1;
+}
+
+a {
+  color: rgb(30, 255, 79);
+}
+
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}

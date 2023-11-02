@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Election</title>
+    {% load static %}
+    <link rel ="stylesheet" href="{%static 'css/create.css' %}">
+</head>
+<body>
+    {% if msgtype == "error" %}
+        <script>
+            alert("{{message}}");
+        </script>
+    {% endif %}   
+    <div class="container">
+        <div class="tables" border="1">
+            <table>
+                <tr>
+                    <th>Your Campaign <a href="edit">Edit</a></th>
+                </tr>
+                {% for row in table_list%}
+                    <tr>
+                        <td>{{row}}</td>
+                    </tr>
+                {% endfor%}
+            </table>
+            <button><a href="crelection">Create Campaign</a></button>
+            <a href="/">Home</a>
+        </div>
+        <div class="create-table">
+            <form  method="post">
+                {%csrf_token%}
+                {% if gateway == "tab_cr" %}
+                <label for="input">Create Campaign : </label>
+                <input type="text" name="elec_tab" id="elec_tab">
+                <button type="submit">Create</button>
+            {% endif %}   
+            {% if gateway == "comp_tab" %}
+                <h3>{{table}}</h3>
+                <label for="input">Add Candicate : </label>
+                <input type="text" name="can_nm" id="">
+                <button type="submit">Create</button>
+
+                <table border="1">
+                    <tr>
+                        <td>Candidate Name</td>
+                    </tr>
+                    {% for can in candidate%}
+                            <tr>
+                                <td>{{can}}</td>
+                            </tr>
+                    {% endfor%}
+                </table>
+                <button><a href="submit">Submit</a></button>
+            {% endif %} 
+            </form>
+        </div>
+    </div>
+</body>
+</html>
