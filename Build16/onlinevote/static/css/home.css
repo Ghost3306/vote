@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Onest;
+}
+body{   
+    
+}
+    
+   
+
+
+.navbar{
+    width: 100%;
+    height: 65px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+    box-shadow: 0 0 10px 0 rgb(113, 113, 113)
+}
+.navbar .inn1{
+    display: flex;
+    align-items: center ;
+}
+.navbar .inn1 img{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+}
+.navbar .inn1 h2{
+    margin-left: 12px;
+    color: blueviolet;
+}
+.navbar .inner{
+    margin-right: 30px;
+}
+.navbar .inner a{
+    margin-right: 15px;
+    font-size: 22px;
+    text-decoration: none;
+    color: blueviolet;  
+    transition: 0.2s;
+}
+.navbar .inner a:hover{  
+    font-size: 24px;
+    text-decoration: underline; 
+    color: #fff;  
+}
+.main-body{
+    display: flex;
+    justify-content: center;
+}
+.main-body .moto{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 25%;
+    left: 11%;
+}
+.main-body .moto p{
+    font-size: 100px;
+    font-weight: 600;
+    color: blueviolet ;
+}
+.main-body .get{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 25%;
+    left: 55%;
+}
+.main-body .get p{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: blueviolet;
+}
+
+.main-body .get button{
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: aquamarine;
+    transition: 0.2s;
+    color: blueviolet;
+}
+
+.main-body .get button:hover{
+    width: 160px;
+    color: #fff;
+    font-size: 20px;
+}

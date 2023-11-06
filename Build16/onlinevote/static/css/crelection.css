@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Onest;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .label{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.container .label input[type=text]{
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    outline: none;
+    border-radius:7px ;
+    padding: 8px;
+}
+
+.container .label input[type=text]::placeholder{
+   
+}

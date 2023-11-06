@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <title>Homepage</title>
+    {% load static %}
+    <link rel ="stylesheet" href="{%static 'css/home.css' %}">
+    <link rel="icon" type="image/png"  href="{% static '/images/fav.png'%}" />
+</head>
+<body>
+    {% if msgtype == "error" %}
+        <script>
+            alert("{{message}}");
+        </script>
+    {% endif %}   
+    <div class="navbar">
+        <div class="inn1">
+            <img src="{% static '/images/fav.png'%}" alt="">
+            <h2>Online Vote</h2>
+        </div>
+        
+        <div class="inner">
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="userlogin">Login</a>
+            <a href="register">Register</a>
+        </div>
+        
+    </div>
+    <div class="main-body">
+        <div class="moto">
+            <p>Your Vote</p>
+            <p>Your Voice</p>
+        </div>
+        <div class="get">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius asperiores numquam reprehenderit placeat, fugit at reiciendis porro quis error ut, voluptatem repellat incidunt cum culpa, omnis mollitia a ipsa labore repudiandae sapiente inventore ex adipisci rem. Eum harum commodi officia accusantium! Soluta error placeat libero omnis sit debitis beatae, animi accusamus, illo fugit perferendis autem volu</p>
+            <button >GET STARTED</button>
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    
+</body>
+</html>
