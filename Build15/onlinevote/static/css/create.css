@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Onest;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    display: flex;
+    margin-left: 35px;
+    margin-top: 35px;
+    
+}
+.container .tables{
+    width: 300px;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+.container .create-table{
+    width: 700px;
+    height: auto;
+    border: 1px solid black;
+    margin-left: 20px;
+    padding: 10px;
+}

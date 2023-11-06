@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Voting</title>
+    {% load static %}
+    <link rel ="stylesheet" href="{%static 'css/search.css' %}">
+</head>
+<body>
+    <div class="container">
+        <form  method="post">
+            {% csrf_token %}
+            <input type="text" name="campaign" id="" placeholder="Enter campaign ID">
+            <button type="submit">Search</button>
+        </form>
+        <div class="cam">
+            <form method="post">
+                {% csrf_token %}
+                <table>
+                {% if table %}
+                    {% for can in table%}
+                        <tr>
+                            <td>{{can}}</td>
+                            <td><input type="radio" name="status" id="" value="{{can}}"></td>
+                        </tr>
+
+                    {% endfor %}
+                   
+                {% endif %}   
+                </table>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <a href="/">Home</a>
+    </div>
+</body>
+</html>

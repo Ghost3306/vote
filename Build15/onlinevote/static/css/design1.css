@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Onest;
+}
+body{
+    background: rgb(171,156,237);
+    background: linear-gradient(112deg, rgba(171,156,237,1) 1%, rgba(207,168,240,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(171,156,237);
+    background: linear-gradient(112deg, rgba(171,156,237,1) 1%, rgba(207,168,240,1) 35%, rgba(0,212,255,1) 100%);
+   
+}
+.container h1{
+    text-align: center;
+    color:white;
+    
+    padding-bottom: 5px;
+}
+.container .inp1{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.container .inp1 input[type=text]{
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    outline: none;
+    border-radius:7px ;
+    padding: 8px;
+}
+
+.container .inp1 input[type=text]::placeholder{
+   
+}
+.container .inp2{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.container .inp2 input[type=password]{
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    outline: none;
+    border-radius:7px ;
+    padding: 8px;
+}
+
+
+.container .inp3{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.container .inp3 button{
+    width: 150px;
+    height: 44px;
+    background-color: aqua;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.1s;
+}
+
+.container .inp3 button:hover{
+    width: 170px;
+    
+
+}
+.container .ext{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container .ext a{
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.2s;
+}
+
+.container .ext a:hover{
+    text-decoration: underline;
+    font-size: 17px;
+}
